@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="restaurante.css"/>
+        <script src="restaurante_script.js"></script>
+        <title>Casa Pepe | Gestión</title>
+    </head>
+    <body>
+        <div class="cabecera">
+            <img id="logo" src="resources/logo_restaurante.png" alt="logo">
+        </div>
+
+        <h1 class="seccion">Pedidos en curso</h1>
+
+            <div class="fila">
+                <div class="columna">
+                    <form class="formularios" id="formularios_carta">
+                        <h2>Carta</h2><br>
+                        
+                        <input type="radio" id="primeros" name="gender" value="Primeros platos" onclick="actualizarCarta('carta', 1)" checked=true>
+                        <label id="label_primeros" for="primeros">Primeros platos</label><br>
+
+                        <input type="radio" id="segundos" name="gender" value="Segundos platos" onclick="actualizarCarta('carta', 2)">
+                        <label id="label_segundos" for="segundos">Segundos platos</label><br>
+
+                        <input type="radio" id="postres" name="gender" value="Postres" onclick="actualizarCarta('carta', 3)">
+                        <label id="label_postres" for="postres">Postres</label><br><br>
+
+                        <select id="carta" multiple ondblclick="pedidoMesa('primeros', 'segundos', 'carta', 'mesa', 'mesas', 'cuenta')">
+                            <option value="plato1">Puré de patata</option>
+                            <option value="plato2">Macarrones con queso</option>
+                            <option value="plato3">Garbanzos con chorizo</option>
+                            <option value="plato4">Judías verdes</option>
+                            <option value="plato5">Sopa de pescado</option>
+                        </select><br>
+                    </form> 
+                </div>
+    
+                <div class="columna">
+                    <form class="formularios" id="formularios_mesas">
+                        <h2>Mesas</h2><br>
+
+                        <select id="mesas" onchange="cambiarMesa('mesas', 'mesa', 'cuenta', 'cafe', 'copa')">
+                            <option value="1">Mesa 1</option>
+                            <option value="2">Mesa 2</option>
+                            <option value="3">Mesa 3</option>
+                            <option value="4">Mesa 4</option>
+                            <option value="5">Mesa 5</option>
+                        </select><br><br>
+
+                        <select id="mesa" multiple></select><br>
+
+                        <input type="checkbox" id="cafe" value="cafe" onclick="modificarExtra('mesas', 'cuenta', 'cafe', 0)">
+                        <label for="cafe">con café</label><br>
+                        <input type="checkbox" id="copa" value="copa" onclick="modificarExtra('mesas', 'cuenta', 'copa', 1)">
+                        <label for="copa">con copa</label><br><br>
+
+                        <input type="text" id="cuenta" value="" disabled><br><br>
+                        <input type="button" id="cuenta" value="Pagado" 
+                            onclick="cobrar('mesas', 'mesa', 'cafe', 'copa', 'cuenta')">
+                    </form> 
+                </div>
+            </div>
+            
+        
+        
+        <div class="footer">
+            <p>Casa Pepe - Calle Juan de Austria, 16, 28804, Alcalá de Henares, Madrid</p>
+            <a href="">Quiénes somos | </a>
+            <a href="">Contacto | </a>
+            <a href="">Cómo llegar</a>
+        </div>     
+    </body>
+</html>

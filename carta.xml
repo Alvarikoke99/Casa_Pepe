@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu restaurante="Casa Pepe">
+        <plato tipo="primero">
+            <nombre>Puré de Patata</nombre>
+            <precio>5.95</precio>
+            <descripcion>Puré de patata roja con picatostes</descripcion>
+            <calorias>350</calorias>
+        </plato>
+
+        <plato tipo="primero">
+            <nombre>Macarrones con queso</nombre>
+            <precio>4.95</precio>
+            <descripcion>Macarrones con queso parmesano</descripcion>
+            <calorias>450</calorias>
+        </plato>
+
+        <plato tipo="primero">
+            <nombre>Garbanzos con chorizo</nombre>
+            <precio>6.95</precio>
+            <descripcion>Garbanzos cocidos con chorizo de Atienza</descripcion>
+            <calorias>950</calorias>
+        </plato>
+
+        <plato tipo="primero">
+            <nombre>Judías verdes</nombre>
+            <precio>3.95</precio>
+            <descripcion>Judías verdes cocidas de la variedad "Blanca de España"</descripcion>
+            <calorias>350</calorias>
+        </plato>
+
+        <plato tipo="primero">
+            <nombre>Sopa de pescado</nombre>
+            <precio>5.95</precio>
+            <descripcion>Sopa de morralla de pescado</descripcion>
+            <calorias>350</calorias>
+        </plato>
+
+    
+        <plato tipo="segundo">
+            <nombre>Merluza a la plancha</nombre>
+            <precio>6.95</precio>
+            <descripcion>Rodaja de merluza a la plancha con aceite de oliva</descripcion>
+            <calorias>400</calorias>
+        </plato>
+
+        <plato tipo="segundo">
+            <nombre>Pescado según mercado</nombre>
+            <precio>5.95</precio>
+            <descripcion>Pescado del día fresco del mercado</descripcion>
+            <calorias>400</calorias>
+        </plato>
+
+        <plato tipo="segundo">
+            <nombre>Solomillo de cerdo</nombre>
+            <precio>3.95</precio>
+            <descripcion>Solomillo de cerdo en salsa</descripcion>
+            <calorias>250</calorias>
+        </plato>
+
+    
+        <plato tipo="postre">
+            <nombre>Café</nombre>
+            <precio>1.30</precio>
+            <descripcion>Café</descripcion>
+            <calorias>70</calorias>
+        </plato>
+
+        <plato tipo="postre">
+            <nombre>Fruta del día</nombre>
+            <precio>2.00</precio>
+            <descripcion>Fruta variada</descripcion>
+            <calorias>150</calorias>
+        </plato>
+
+    
+        <plato tipo="entrante">
+            <nombre>Pepinillos</nombre>
+            <precio>1.00</precio>
+            <descripcion>Pepinillos agridulces</descripcion>
+            <calorias>15</calorias>
+        </plato>
+
+        <plato tipo="entrante">
+            <nombre>Patatas fritas</nombre>
+            <precio>4.50</precio>
+            <descripcion>Patatas fritas caseras</descripcion>
+            <calorias>650</calorias>
+        </plato>
+</menu>

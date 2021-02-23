@@ -1,0 +1,141 @@
+
+body {
+    background-color: white;
+    margin: 0px;
+}
+
+.seccion {
+    text-align: center;
+    margin-top: 128px; /*UP R DOWN L*/
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Logo de la página */
+.cabecera {
+    background-color: burlywood;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Filas del layout */
+.fila {
+    margin: 32px;
+}  
+/* Columnas del layout: columna -> 4 columnas | columna_grande -> 2 columnas */
+.columna {
+    float: left;
+    width: 50%;
+}
+
+/* Se desactivan los elementos flotantes despues de las columnas para que no afecte al resto de la página */
+.fila:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+/* Responsive layout - Hace que las columnas se coloquen unas encima de otras en pantallas pequeñas (600px de ancho o menos) */
+@media screen and (max-width: 600px) {
+    .columna {
+      width: 100%;
+    }
+}
+
+.formularios {
+      font-family: 'Times New Roman', Times, serif;
+      font-size: large;
+      color: black;
+      font-weight: bold;
+      text-decoration: none;
+}
+
+.formularios select{
+    font-family: 'Times New Roman', Times, serif;
+    width: 200px;
+    padding: 6px 6px;
+    margin: 8px 2px 48px 2px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: large;
+}
+
+input[type="text"]{
+    font-family: 'Times New Roman', Times, serif;
+    width: 200px;
+    padding: 6px 6px;
+    margin: 8px 2px 48px 2px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: large;
+}
+
+#carta {
+    height: 220px;
+}
+
+#mesa {
+    height: 220px;
+}
+
+#formularios_carta {
+    margin: 64px 32px 128px 0px; /*UP R DOWN L*/
+    text-align: right;
+}
+
+#label_segundos {
+    margin-right: -3px;
+}
+
+#label_postres {
+    margin-right: 65px;
+}
+
+#formularios_mesas {
+    margin: 64px 0px 128px 32px; /*UP R DOWN L*/
+    text-align: left;
+}
+#formularios_mesas h2 {
+    margin-bottom: 28px; 
+}
+#mesas {
+    margin-bottom: 13px; 
+}
+
+input[type=button] {
+    font-family: 'Times New Roman', Times, serif;
+    display: inline-block;
+    border-radius: 6px;
+    background-color: rgb(105, 56, 21);
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 18px;
+    padding: 8px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+/* Footer de la página, tanto normal como con posición absoluta */
+.footer {
+    font-weight: bold;
+    position: absolute;
+    width: 100%;
+    color: black; 
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium; 
+    background-color: white; 
+    padding-top: 16px; 
+    padding-bottom: 24px;  
+    text-align: center;
+  }
+.footer a {
+    font-weight: bold;
+    color: black; 
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+    float: initial;
+}
